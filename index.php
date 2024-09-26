@@ -9,7 +9,7 @@ require_once "./app/controller/inicio.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Productos</title>
-    <link rel="stylesheet" href="<?= css . 'productos.css'; ?>">
+    <link rel="stylesheet" href="<?=css.'productos.css'; ?>">
 </head>
 <body>
 <div class="container">
