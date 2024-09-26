@@ -43,6 +43,6 @@
 </div>
 </div>
 </div>
-<script src="./public/js/main.js"></script>
+<script src="./public/js/login.js"></script>
 </body>
 </html>

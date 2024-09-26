@@ -1,0 +1,111 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 350px; /* Hacemos el contenedor más pequeño */
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.012); /* Fondo semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.159), /* Sombra base */
+                0px 0px 30px rgba(255, 255, 255, 0.979); /* Efecto de resplandor */
+    overflow: hidden;
+    backdrop-filter: blur(3px); /* Efecto de desenfoque del fondo */
+}
+
+.card-header {
+    background-color: rgba(52, 58, 64, 0.8); /* Semi-transparente */
+    color: white;
+    padding: 15px; /* Reducimos el padding */
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 20px; /* Reducimos el tamaño del texto */
+}
+
+.card-body {
+    padding: 20px; /* Reducimos el padding */
+}
+
+/* Estilos del formulario */
+.form-group {
+    margin-bottom: 10px; /* Reducimos el margen entre campos */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #fff; /* Cambia el color del texto para que sea visible */
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px; /* Hacemos los inputs más pequeños */
+    font-size: 14px; /* Reducimos el tamaño del texto */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente para los inputs */
+    color: #fff; /* Texto en blanco */
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ffffff;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo un poco más claro en focus */
+}
+
+.btn {
+    background-color: rgba(15, 16, 18, 0.882); /* Semi-transparente */
+    color: white;
+    padding: 8px 16px; /* Botón más pequeño */
+    font-size: 14px; /* Tamaño del texto más pequeño */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(52, 58, 64, 1); /* Color sólido en hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .card {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+}
